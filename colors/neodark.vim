@@ -1,3 +1,8 @@
+if exists("g:loaded_neodark_colors")
+  finish
+endif
+let g:loaded_neodark_colors = 1
+
 highlight clear
 
 if exists('syntax_on')
@@ -260,7 +265,8 @@ call s:hi('PmenuSbar',                 '',           s:base2,    '')
 call s:hi('PmenuSel',                  s:base2,      s:green,    '')
 call s:hi('PmenuThumb',                '',           s:base4,    '')
 call s:hi('Question',                  s:blue,       '',         'none')
-call s:hi('Search',                    s:base1,      s:beige,    '')
+""call s:hi('Search',                    s:base1,      s:beige,    '')
+call s:hi('Search',                    s:base5,      s:base3,    '')
 call s:hi('SignColumn',                s:base5,      s:base1,    '')
 call s:hi('SpecialKey',                s:base4,      '',         '')
 call s:hi('SpellBad',                  s:red,        s:base1,    'underline')
